@@ -26,3 +26,23 @@
 //     e.preventDefault()
 //     console.log('submitted form')
 // })
+
+const link = document.querySelector('a')
+link.addEventListener('mouseleave', e =>
+{
+    e.preventDefault()
+    console.log('preventDefault')
+})
+
+const button = document.querySelector('button')
+button.addEventListener('click', e =>
+{
+    e.preventDefault()
+    console.log('Arrow this' + this)
+})
+
+button.addEventListener('click', function (e)
+{
+    e.preventDefault()
+    console.log(this)
+})
