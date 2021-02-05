@@ -38,11 +38,12 @@ const button = document.querySelector('button')
 button.addEventListener('click', e =>
 {
     e.preventDefault()
-    console.log('Arrow this' + this)
+    console.log(e.target)
 })
 
 button.addEventListener('click', function (e)
 {
     e.preventDefault()
-    console.log(this)
+
+    console.log(e.target)
 })
